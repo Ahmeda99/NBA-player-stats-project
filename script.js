@@ -53,7 +53,6 @@ function handleGetData(event) {
         console.log(height);
         console.log(weight);
         console.log(team);
-
         // $first_name.text(response.data[1].first_name)
         
     }, function (error) {
