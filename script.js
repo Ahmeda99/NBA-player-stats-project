@@ -17,7 +17,7 @@ $form.on('submit', handleGetData);
 
 // $(document).ready(function() {
 //     console.log("page-is-ready")
-    
+
 //     $.ajax(URL).then(function (data) {
 //         console.log('NBA data is ready')
 //         // console.log(data)
@@ -36,28 +36,47 @@ function handleGetData(event) {
 
     $.ajax(URL + userInput).then(function (response) {
         console.log('NBA data is ready')
+        // team.text(response.team)
         // console.log(data)
         // $id.text(response.id)
+        // players.text(response.team.full_name)
 
         const players = response.data;
+
         name = players[0].first_name + " " + players[0].last_name;
+
         position = players[0].position;
+
         height = players[0].height_feet.toString() + "ft " + players[0].height_inches.toString() + " inches";
+
         weight = players[0].weight_pounds.toString() + " pounds";
+
         team = players[0].team.full_name;
 
-
-
+        // console
         console.log(name);
         console.log(position);
         console.log(height);
         console.log(weight);
         console.log(team);
+
         // $first_name.text(response.data[1].first_name)
-        
+
     }, function (error) {
         console.log('something is wrong')
         console.log(error)
     })
 
 }
+// if(userInput){
+//     console.log("player")
+//     feedback = "this player"
+//     console.log(response.data)
+//     alert(feedback + response.data)
+// }
+
+// if (response.ok) {
+//     return response.json();
+//   } else {
+//     throw new Error("NETWORK RESPONSE ERROR");
+//   }
