@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css" defer>
     <title>NBA Player Stats</title>
 </head>
 
 <body>
-    <main>
-        <div id="name"></div>
-        <div id="team"></div>
-        <div id="height"></div>
-        <div id="weight"></div>
-        <div id="position"></div>
-    </main>
+<main id="containers">
+</main>
     <div class="wrap">
         <div class="NBA-Player-search-bar">
             <form>
@@ -28,6 +23,15 @@
             </button>
             </form>
         </div>
+        <br>
+        <div id = "playerInfo">
+            <h2 id = "playerName"></h2>
+            <p id = "playerPosition" ></p>
+            <p id = "playerTeam" ></p>
+            <p id = "playerHeight" ></p>
+            <p id = "playerWeight" ></p>
+        </div>
+    </div>
 </body>
 
 </html>

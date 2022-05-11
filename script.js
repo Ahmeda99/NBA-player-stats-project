@@ -1,5 +1,6 @@
 //variables
 const URL = "https://www.balldontlie.io/api/v1/players?search="
+// const URL = ""
 
 // element references
 let $form = $('form');
@@ -34,6 +35,10 @@ function handleGetData(event) {
     event.preventDefault()
     const userInput = $input.val();
 
+    // $.ajax(URL("1") + userInput).then(function (response) {
+
+    // }
+
     $.ajax(URL + userInput).then(function (response) {
         console.log('NBA data is ready')
         // team.text(response.team)
@@ -61,13 +66,40 @@ function handleGetData(event) {
         console.log(team);
 
         // $first_name.text(response.data[1].first_name)
-
+        addPlayers(name, position, height, weight, team);
     }, function (error) {
         console.log('something is wrong')
         console.log(error)
     })
 
 }
+
+function addPlayers(name, position, height, weight, team){
+    let playerInfo = document.getElementById("playerInfo");
+    console.log(playerInfo)
+
+    $("#playerName").text(name)
+    $("#playerPosition").text(position)
+    $("#playerHeight").text(height)
+    $("#playerWeight").text(weight)
+    $("#playerTeam").text(team)
+    // document.getElementById("playerName").textContent = name;
+    // document.getElementById("playerPosition").textContent = position;
+    // document.getElementById("playerHeight").textContent = height;
+    // document.getElementById("playerWeight").textContent = weight;
+    // document.getElementById("playerTeam").textContent = team;
+
+    console.log(playerInfo)
+ }
+
+
+// function testPage(){
+// }
+
+//testPage();
+
+
+
 // if(userInput){
 //     console.log("player")
 //     feedback = "this player"
