@@ -35,7 +35,7 @@ function handleGetData(event) {
     event.preventDefault()
     const userInput = $input.val();
 
-    // $.ajax(URL("1") + userInput).then(function (response) {
+    // $.ajax(URL + userInput).then(function (response) {
 
     // }
 
