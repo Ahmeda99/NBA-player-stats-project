@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" defer>
+    <title>NBA Player Stats</title>
+</head>
+
+<body>
+<main id="containers">
+</main>
+    <div class="wrap">
+        <div class="NBA-Player-search-bar">
+            <form>
+                <input name = "search" type="text" class="search-term" placeholder="Enter Player Name" pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+">
+            <button type="submit" class="searchButton">
+                <i class = "fa fa-search"></i>search
+            </button>
+            </form>
+        </div>
+        <br>
+        <div id = "playerInfo">
+            <h2 id = "playerName"></h2>
+            <p id = "playerPosition" ></p>
+            <p id = "playerTeam" ></p>
+            <p id = "playerHeight" ></p>
+            <p id = "playerWeight" ></p>
+        </div>
+    </div>
+</body>
+
+</html>
