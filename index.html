@@ -12,12 +12,11 @@
 </head>
 
 <body>
-<main id="containers">
-</main>
+<main id="containers"></main>
     <div class="wrap">
-        <div class="NBA-Player-search-bar">
+        <div class="search">
             <form>
-                <input name = "search" type="text" class="search-term" placeholder="Enter Player Name" pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+">
+                <input type="text" class="searchTerm" placeholder="Enter Player Name" pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+">
             <button type="submit" class="searchButton">
                 <i class = "fa fa-search"></i>search
             </button>
@@ -31,7 +30,14 @@
             <p id = "playerHeight" ></p>
             <p id = "playerWeight" ></p>
         </div>
+        <div id = "title">NBA PLAYER STATS</div>
     </div>
 </body>
+
+<section class="top-banner-section">
+    <div class="banner-image-div">
+      <img class="banner-image" src="https://cdn.nba.net/nba-drupal-prod/2020-04/Video_T1_Hero_TopVideo.jpg" alt="Banner Image" />
+    </div>
+  </section>
 
 </html>

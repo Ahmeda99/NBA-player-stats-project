@@ -1,6 +1,6 @@
 //variables
 const URL = "https://www.balldontlie.io/api/v1/players?search="
-// const URL = ""
+// const URL = "https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=Danny%20Welbeck"
 
 // element references
 let $form = $('form');
@@ -36,7 +36,7 @@ function handleGetData(event) {
     const userInput = $input.val();
 
     // $.ajax(URL + userInput).then(function (response) {
-
+        // console.log('NBA image is ready')
     // }
 
     $.ajax(URL + userInput).then(function (response) {
