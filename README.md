@@ -12,6 +12,7 @@ I have a search Data base where you are able to look up any nba player of the se
 5. NBA stats API
 
 ### Screenshots
+(https://imgur.com/gallery/ju99cSh)
 (https://imgur.com/gallery/HPSg5F8)
 (https://imgur.com/gallery/h6yi9Oa)
 
